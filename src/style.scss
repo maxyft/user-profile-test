@@ -1,0 +1,150 @@
+@import './variables.scss';
+@import './transitions.scss';
+@import '~vue-multiselect/dist/vue-multiselect.min.css';
+
+.multiselect {
+  &__tags {
+    border-color: $link-text-color;
+    border-radius: 0;
+  }
+
+  &__tag {
+    background: $secondary-text-color;
+  }
+
+  &__tag-icon {
+    &::after {
+      color: white;
+    }
+  }
+}
+
+body {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.25px;
+}
+
+p {
+   margin: 0;
+}
+
+.icon-base {
+  width: 1rem;
+  height: 1rem;
+  fill: $primary-text-color;
+  &--hint {
+    fill: $secondary-text-color;
+  }
+  &--large {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.app-wrapper {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background: #FAFAFA;
+}
+
+.icon-wrapper {
+  margin-right: 0.5rem;
+}
+
+.secondary-card {
+  background-color: $secondary-background;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  &--center {
+    justify-content: center;
+  }
+  &--justify-end {
+    justify-content: flex-end;
+    text-align: right;
+  }
+}
+
+.base-btn {
+  cursor: pointer;
+  padding: 0.5rem;
+  color: white;
+  background: $link-text-color;
+  &--transparent {
+    background: transparent;
+    color: $link-text-color;
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.text-title {
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+  color: $primary-text-color;
+  margin-bottom: 0.5rem;
+}
+
+.text-paragraph {
+  font-size: 14px;
+  line-height: 20px;
+  color: $primary-text-color;
+  &--secondary {
+    color: $secondary-text-color;
+  }
+  &--link {
+    cursor: pointer;
+    color: $link-text-color;
+  }
+  &--hint {
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: $secondary-text-color;    
+  }
+}
+
+.user-info-row {
+  margin-bottom: 0.75rem;
+  &--without-icon {
+    padding-left: 1.5rem;
+  }
+  &--less-margin {
+    margin-bottom: 0.15rem;
+  }  
+}
+
+.contact-column {
+  flex-basis: 33.3333333%;
+  width: 33.3333333%;
+  box-sizing: border-box;
+  padding: 0 0.75rem;
+  .contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__icon {
+      margin-right: 0.3rem;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-grow: 1;
+    }
+  }
+}
